@@ -1,0 +1,21 @@
+{
+  "name": "somnium",
+  "version": "0.0.0",
+  "description": "A lovely component library built from dreams.",
+  "main": "index.js",
+  "repository": "https://github.com/jessbradford/somnium.git",
+  "author": "Jessica Bradford",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "commitizen": "2.9.6",
+    "cz-conventional-changelog": "2.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "scripts": {
+    "commit": "git-cz"
+  }
+}

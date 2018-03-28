@@ -7,13 +7,17 @@
   "author": "Jessica Bradford",
   "license": "Apache-2.0",
   "devDependencies": {
+    "@storybook/react": "3.3.15",
+    "babel-core": "6.26.0",
     "commitizen": "2.9.6",
     "cz-conventional-changelog": "2.1.0",
     "eslint": "4.19.1",
     "eslint-config-airbnb": "16.1.0",
     "eslint-plugin-import": "2.9.0",
     "eslint-plugin-jsx-a11y": "6.0.3",
-    "eslint-plugin-react": "7.7.0"
+    "eslint-plugin-react": "7.7.0",
+    "react": "16.2.0",
+    "react-dom": "16.2.0"
   },
   "config": {
     "commitizen": {
@@ -22,6 +26,7 @@
   },
   "scripts": {
     "commit": "git-cz",
-    "lint": "eslint --ext .js --ext .jsx ."
+    "lint": "eslint --ext .js --ext .jsx .",
+    "storybook": "start-storybook -p 9001 -c .storybook"
   }
 }

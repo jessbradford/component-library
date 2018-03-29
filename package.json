@@ -28,5 +28,11 @@
     "commit": "git-cz",
     "lint": "eslint --ext .js --ext .jsx .",
     "storybook": "start-storybook -p 9001 -c .storybook"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome": "1.1.5",
+    "@fortawesome/fontawesome-free-brands": "5.0.9",
+    "@fortawesome/react-fontawesome": "0.0.18",
+    "styled-components": "3.2.3"
   }
 }

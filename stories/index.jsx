@@ -2,7 +2,9 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import Button from '../components/Button';
-import CardContainer from '../containers/CardContainer';
+import Card from '../components/Card';
+import CardOutline from '../components/CardOutline';
+import CardImage from '../components/CardImage';
 
 storiesOf('Button', module)
   .add('with text', () => (
@@ -15,6 +17,16 @@ storiesOf('Button', module)
   ));
 
 storiesOf('Card', module)
+  .add('Card Outline', () => (
+    <CardOutline onClick={action('clicked')} />
+  ));
+
+storiesOf('Card', module)
+  .add('Card Image', () => (
+    <CardImage onClick={action('clicked')} />
+  ));
+
+storiesOf('Card', module)
   .add('Card', () => (
-    <CardContainer onClick={action('clicked')} />
+    <Card onClick={action('clicked')} />
   ));

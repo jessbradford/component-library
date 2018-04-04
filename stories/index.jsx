@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
+import moment from 'moment';
 import Button from '../components/Button';
 import Card from '../components/Card';
 import CardOutline from '../components/CardOutline';
@@ -28,5 +29,5 @@ storiesOf('Card', module)
 
 storiesOf('Card', module)
   .add('Card', () => (
-    <Card onClick={action('clicked')} />
+    <Card onClick={action('clicked')} date={moment().format('LL')} />
   ));

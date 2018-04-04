@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const StyledOutline = styled.div`
@@ -17,8 +18,14 @@ const StyledOutline = styled.div`
   }
 `;
 
-export default function CardOutline() {
+export default function CardOutline(props) {
   return (
-    <StyledOutline />
+    <StyledOutline>
+      { props.children }
+    </StyledOutline>
   );
 }
+
+CardOutline.propTypes = {
+  children: PropTypes.element.isRequired,
+};

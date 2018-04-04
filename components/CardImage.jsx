@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const StyledImage = styled.div`
-  border: 1px solid gainsboro;
-
   @media(min-width: 600px) {
     width: 250px;
     height: 160px;

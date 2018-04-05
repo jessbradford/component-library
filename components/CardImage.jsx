@@ -11,12 +11,15 @@ const StyledImage = styled.div`
   @media(max-width: 600px) {
     width: 137px;
     height: 150px;
+    grid-row: 1 / -1;
   }
 `;
 
 export default function CardImage(props) {
   return (
-    <StyledImage>{props.image}</StyledImage>
+    <StyledImage>
+      {props.image}
+    </StyledImage>
   );
 }
 

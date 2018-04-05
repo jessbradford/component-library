@@ -10,12 +10,12 @@ const StyledIcon = styled(FontAwesomeIcon)`
 
   @media(min-width: 600px) {
     padding-left: 205px;
-    padding-bottom: 280px;
+    padding-top: 10px;
   }
 
   @media(max-width: 600px) {
     padding-left: 5px;
-    padding-bottom: 280px;
+    padding-top: 5px;
   }
 `;
 

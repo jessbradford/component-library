@@ -2,32 +2,27 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import moment from 'moment';
-import Button from '../components/Button';
 import Card from '../components/Card';
-import CardOutline from '../components/CardOutline';
+import CardFooter from '../components/CardFooter';
 import CardImage from '../components/CardImage';
-
-storiesOf('Button', module)
-  .add('with text', () => (
-    <Button onClick={action('clicked')}>Hello Button</Button>
-  ))
-  .add('with some emoji', () => (
-    <Button onClick={action('clicked')} >
-      <span role="img" aria-label="emojies">😀 😎 👍 💯</span>
-    </Button>
-  ));
+import CardOutline from '../components/CardOutline';
+import Divider from '../components/Divider';
 
 storiesOf('Card', module)
   .add('Card Outline', () => (
     <CardOutline onClick={action('clicked')} />
-  ));
-
-storiesOf('Card', module)
+  ))
+  .add('Card Footer', () => (
+    <CardFooter onClick={action('clicked')} date={moment().format('LL')} />
+  ))
   .add('Card Image', () => (
     <CardImage onClick={action('clicked')} />
+  ))
+  .add('Card', () => (
+    <Card onClick={action('clicked')} />
   ));
 
-storiesOf('Card', module)
-  .add('Card', () => (
-    <Card onClick={action('clicked')} date={moment().format('LL')} />
+storiesOf('Divider', module)
+  .add('Divider', () => (
+    <Divider />
   ));

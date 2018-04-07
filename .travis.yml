@@ -9,7 +9,6 @@ before_script:
   - "./cc-test-reporter before-build"
 install:
   - yarn
-  - "yarn bootstrap"
 language: node_js
 node_js:
   - "8"

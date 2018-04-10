@@ -2,6 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import moment from 'moment';
+import Button from '../components/Button';
 import Card from '../components/Card';
 import CardFooter from '../components/CardFooter';
 import CardImage from '../components/CardImage';
@@ -12,6 +13,11 @@ import Somnium from '../components/Somnium';
 storiesOf('Somnium', module)
   .add('Somnium', () => (
     <Somnium webtitle="SOMNIUM" />
+  ));
+
+storiesOf('Button', module)
+  .add('Button', () => (
+    <Button onClick={action('clicked')} buttonName="Hello" />
   ));
 
 storiesOf('Card', module)

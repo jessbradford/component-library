@@ -11,7 +11,7 @@ import Somnium from '../components/Somnium';
 
 storiesOf('Somnium', module)
   .add('Somnium', () => (
-    <Somnium webtitle="MARVELOUS WORK AND A WONDER" />
+    <Somnium webtitle="SOMNIUM" />
   ));
 
 storiesOf('Card', module)

@@ -17,7 +17,7 @@ storiesOf('Somnium', module)
 
 storiesOf('Button', module)
   .add('Button', () => (
-    <Button onClick={action('clicked')} buttonName="Hello" />
+    <Button onClick={action('clicked')} buttonName="I am a button" />
   ));
 
 storiesOf('Card', module)

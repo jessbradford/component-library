@@ -1,18 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Colors from '../constants/Colors';
 
 const StyledButton = styled.button`
-  background: linear-gradient(to right, #9fccfc 35%, #0E6EB8 );
-  border-radius: 10px;
+  background-color: ${Colors.blue} ;
+  border: ${Colors.blue};
+  border-radius: 5px;
   color: white;
   font-size: 14px;
   padding: 10px 25px;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
-  .button:hover {
-    background-color: #EE82EE;
-    color: white;
+  &:hover {
+    opacity: 0.9;
   }
 `;
 

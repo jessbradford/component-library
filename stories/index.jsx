@@ -7,6 +7,12 @@ import CardFooter from '../components/CardFooter';
 import CardImage from '../components/CardImage';
 import CardOutline from '../components/CardOutline';
 import Divider from '../components/Divider';
+import Somnium from '../components/Somnium';
+
+storiesOf('Somnium', module)
+  .add('Somnium', () => (
+    <Somnium webtitle="SOMNIUM" />
+  ));
 
 storiesOf('Card', module)
   .add('Card Outline', () => (

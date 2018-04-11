@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Colors from '../constants/Colors';
 
 const StyledDesc = styled.div`
   font-size: 12px;
@@ -8,7 +9,7 @@ const StyledDesc = styled.div`
   padding-right: 10px;
 
   .link {
-    color: #0686DC;
+    color: ${Colors.blue};
   }
 `;
 

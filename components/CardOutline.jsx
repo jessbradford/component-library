@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Colors from '../constants/Colors';
 
 const StyledOutline = styled.div`
-  border: 1px solid gainsboro;
+  border: 1px solid ${Colors.grey};
 
   @media(min-width: 600px) {
     border-radius: 2px;
-    box-shadow: 2px 2px #f0f0f0;
+    box-shadow: 2px 2px ${Colors.boxshadowgrey};
     height: 325px;
     width: 250px;
   }

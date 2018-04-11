@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faFileAlt } from '@fortawesome/fontawesome-free-regular';
+import Colors from '../constants/Colors';
 
 const StyledFooter = styled.div`
   align-items: center;
@@ -10,7 +11,7 @@ const StyledFooter = styled.div`
   font-size: 10px;
   grid-template-columns: .3fr 2fr 1fr;
   grid-template-rows: 20px;
-  color: darkgrey;
+  color: ${Colors.darkgrey};
   padding-left: 10px;
   padding-right: 10px;
 

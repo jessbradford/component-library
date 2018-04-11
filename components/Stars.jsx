@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+import Colors from '../constants/Colors';
 
 const StarBackground = styled.div`
   background-image:
-    radial-gradient(white, rgba(255,255,255,.1) 3px, transparent 3px),
-    radial-gradient(white, rgba(255,255,255,.4) 1px, transparent 2px);
+    radial-gradient(${Colors.white}, rgba(255,255,255,.1) 3px, transparent 3px),
+    radial-gradient(${Colors.white}, rgba(255,255,255,.4) 1px, transparent 2px);
   background-size: 250px 250px, 150px 150px;
   background-position: 130px 270px, 70px 100px;
   position: absolute;
@@ -30,7 +31,7 @@ const IndividualStars = styled.div`
   width: 100%;
   height: 100%;
   .star {
-    background: radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 3px);
+    background: radial-gradient(${Colors.white}, rgba(255,255,255,.1) 2px, transparent 3px);
     border-radius: 50%;
     position: absolute;
   }

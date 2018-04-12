@@ -6,6 +6,7 @@ import Card from '../components/Card';
 import CardFooter from '../components/CardFooter';
 import CardImage from '../components/CardImage';
 import CardOutline from '../components/CardOutline';
+import CardPage from '../components/CardPage';
 import Divider from '../components/Divider';
 import Somnium from '../components/Somnium';
 
@@ -26,6 +27,9 @@ storiesOf('Card', module)
   ))
   .add('Card', () => (
     <Card onClick={action('clicked')} />
+  ))
+  .add('Card Page', () => (
+    <CardPage headerName="CARD PAGE" />
   ));
 
 storiesOf('Divider', module)

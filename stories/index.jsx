@@ -29,7 +29,7 @@ storiesOf('Card', module)
     <Card onClick={action('clicked')} />
   ))
   .add('Card Page', () => (
-    <CardPage headerName="CARD PAGE" />
+    <CardPage />
   ));
 
 storiesOf('Divider', module)

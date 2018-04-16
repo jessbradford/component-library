@@ -9,6 +9,7 @@ import CardImage from '../components/CardImage';
 import CardOutline from '../components/CardOutline';
 import CardPage from '../components/CardPage';
 import Divider from '../components/Divider';
+import Header from '../components/Header';
 import Somnium from '../components/Somnium';
 
 storiesOf('Somnium', module)
@@ -41,4 +42,9 @@ storiesOf('Card', module)
 storiesOf('Divider', module)
   .add('Divider', () => (
     <Divider />
+  ));
+
+storiesOf('Header', module)
+  .add('Header', () => (
+    <Header title="This is a Title" />
   ));

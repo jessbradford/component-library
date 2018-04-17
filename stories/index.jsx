@@ -10,6 +10,7 @@ import CardOutline from '../components/CardOutline';
 import CardPage from '../components/CardPage';
 import Divider from '../components/Divider';
 import Header from '../components/Header';
+import Modal from '../components/Modal';
 import Somnium from '../components/Somnium';
 
 storiesOf('Somnium', module)
@@ -19,7 +20,7 @@ storiesOf('Somnium', module)
 
 storiesOf('Button', module)
   .add('Button', () => (
-    <Button onClick={action('clicked')} buttonName="I am a button" />
+    <Button onClick={action('clicked')} button="I am a button" />
   ));
 
 storiesOf('Card', module)
@@ -46,5 +47,13 @@ storiesOf('Divider', module)
 
 storiesOf('Header', module)
   .add('Header', () => (
-    <Header title="This is a Title" />
+    <Header headerTitle="This is a Title" />
+  ));
+
+storiesOf('Modal', module)
+  .add('Modal', () => (
+    <div>
+      <CardPage />
+      <Modal message="This is a message" />
+    </div>
   ));

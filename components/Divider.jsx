@@ -7,6 +7,7 @@ const StyledDivider = styled.div`
   border-top: 1px solid ${Colors.grey};
   display: block;
   height: 1px;
+  margin: -10px;
 `;
 
 export default function Divider() {

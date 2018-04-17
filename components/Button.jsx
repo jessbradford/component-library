@@ -9,23 +9,25 @@ const StyledButton = styled.button`
   border-radius: 5px;
   color: white;
   font-size: 14px;
-  padding: 10px 25px;
+  padding: 10px 10px;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   &:hover {
     opacity: 0.9;
   }
+  max-width: 100px;
+  justify-self: end;
 `;
 
 export default function Button(props) {
   return (
-    <StyledButton className="button" onClick={props.onClick}>
-      {props.buttonName}
+    <StyledButton onClick={props.onClick}>
+      {props.button}
     </StyledButton>
   );
 }
 
 Button.propTypes = {
   onClick: PropTypes.func.isRequired,
-  buttonName: PropTypes.string.isRequired,
+  button: PropTypes.string.isRequired,
 };

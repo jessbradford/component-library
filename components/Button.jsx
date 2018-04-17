@@ -16,7 +16,7 @@ const StyledButton = styled.button`
     opacity: 0.9;
   }
   max-width: 100px;
-  justify-self: end;
+  
 `;
 
 export default function Button(props) {

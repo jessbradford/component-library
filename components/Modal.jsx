@@ -28,12 +28,19 @@ const StyledModal = styled.div`
   left: 0;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px;
+  padding: 10px 10px 5px 20px;
   position: absolute;
   right: 0;
   top: 20px;
-  width: 75%;
+  width: 70%;
   z-index: 0;
+  .modalButton {
+    justify-self: end;
+  }
+  .divider {
+    margin-left: -20px;
+    margin-right: -10px
+  }
 `;
 
 export default function Modal(props) {
@@ -42,10 +49,16 @@ export default function Modal(props) {
       <StyledBackground>
         <StyledModal>
           <Header headerTitle="Title" />
-          <Divider />
+          <div className="divider">
+            <Divider />
+          </div>
           <p>{props.message}</p>
-          <Divider />
-          <Button button="Button" className="modalButton" />
+          <div className="divider">
+            <Divider />
+          </div>
+          <div className="modalButton">
+            <Button button="Button" />
+          </div>
         </StyledModal>
       </StyledBackground>
     </div>

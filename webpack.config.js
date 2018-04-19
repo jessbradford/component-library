@@ -2,10 +2,19 @@ const path = require('path');
 
 module.exports = {
   entry: './index.js',
+  externals: {
+    react: {
+      commonjs: 'react',
+      commonjs2: 'react',
+      amd: 'react',
+    },
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    library: 'somnium',
     libraryTarget: 'umd',
+    umdNamedDefine: true,
   },
   resolve: {
     extensions: ['.js', '.jsx'],

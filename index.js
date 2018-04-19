@@ -1,29 +1,13 @@
-import Button from './components/Button';
-import Card from './components/Card';
-import CardDescription from './components/CardDescription';
-import CardFooter from './components/CardFooter';
-import CardImage from './components/CardImage';
-import CardOutline from './components/CardOutline';
-import CardTitle from './components/CardTitle';
-import Divider from './components/Divider';
-import Header from './components/Header';
-import Modal from './components/Modal';
-import Somnium from './components/Somnium';
-import StarIcon from './components/StarIcon';
-import Stars from './components/Stars';
-
-export {
-  Button,
-  Card,
-  CardDescription,
-  CardFooter,
-  CardImage,
-  CardOutline,
-  CardTitle,
-  Divider,
-  Header,
-  Modal,
-  Somnium,
-  StarIcon,
-  Stars,
-};
+export { default as Button } from './components/Button';
+export { default as Card } from './components/Card';
+export { default as CardDescription } from './components/CardDescription';
+export { default as CardFooter } from './components/CardFooter';
+export { default as CardImage } from './components/CardImage';
+export { default as CardOutline } from './components/CardOutline';
+export { default as CardTitle } from './components/CardTitle';
+export { default as Divider } from './components/Divider';
+export { default as Header } from './components/Header';
+export { default as Modal } from './components/Modal';
+export { default as Somnium } from './components/Somnium';
+export { default as StarIcon } from './components/StarIcon';
+export { default as Stars } from './components/Stars';

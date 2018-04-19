@@ -7,6 +7,7 @@ import CardOutline from './components/CardOutline';
 import CardTitle from './components/CardTitle';
 import Divider from './components/Divider';
 import Header from './components/Header';
+import Modal from './components/Modal';
 import Somnium from './components/Somnium';
 import StarIcon from './components/StarIcon';
 import Stars from './components/Stars';
@@ -21,6 +22,7 @@ export {
   CardTitle,
   Divider,
   Header,
+  Modal,
   Somnium,
   StarIcon,
   Stars,

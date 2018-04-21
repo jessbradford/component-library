@@ -8,6 +8,11 @@ module.exports = {
       commonjs2: 'react',
       amd: 'react',
     },
+    'styled-components': {
+      commonjs: 'styled-components',
+      commonjs2: 'styled-components',
+      amd: 'styled-components',
+    },
   },
   output: {
     path: path.resolve(__dirname, 'dist'),

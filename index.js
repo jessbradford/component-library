@@ -9,5 +9,4 @@ export { default as Divider } from './components/Divider';
 export { default as Header } from './components/Header';
 export { default as Modal } from './components/Modal';
 export { default as Somnium } from './components/Somnium';
-export { default as StarIcon } from './components/StarIcon';
 export { default as Stars } from './components/Stars';

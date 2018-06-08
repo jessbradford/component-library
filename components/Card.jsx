@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import CardDescription from './CardDescription';
 import CardFooter from './CardFooter';
@@ -22,16 +23,21 @@ const StyledDiv = styled.div`
   }
   `;
 
-export default function Card() {
+export default function Card({ title, desc }) {
   return (
     <CardOutline>
       <StyledDiv>
         <CardImage />
-        <CardTitle title="TITLE" />
-        <CardDescription desc="This is a description" />
+        <CardTitle title={title} />
+        <CardDescription desc={desc} />
         <Divider />
         <CardFooter />
       </StyledDiv>
     </CardOutline>
   );
 }
+
+Card.propTypes = {
+  title: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
+};

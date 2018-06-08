@@ -6,7 +6,6 @@ import CardImage from './CardImage';
 import CardOutline from './CardOutline';
 import CardTitle from './CardTitle';
 import Divider from './Divider';
-import StarIcon from './StarIcon';
 
 const StyledDiv = styled.div`
   align-items: center;
@@ -26,7 +25,6 @@ const StyledDiv = styled.div`
 export default function Card() {
   return (
     <CardOutline>
-      <StarIcon />
       <StyledDiv>
         <CardImage />
         <CardTitle title="TITLE" />
